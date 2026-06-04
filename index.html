@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AletCloud — Ethiopian Cloud Platform</title>
+    <meta name="description" content="AletCloud is Ethiopia's premier cloud platform. Deploy apps, databases, and virtual servers in seconds with enterprise-grade infrastructure.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--3" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="main-nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo" id="nav-logo">
+                <span class="nav__logo-icon">☁</span>
+                <span class="nav__logo-text">AletCloud</span>
+            </a>
+            <div class="nav__links" id="nav-links">
+                <a href="#features" class="nav__link">Features</a>
+                <a href="#services" class="nav__link">Services</a>
+                <a href="#pricing" class="nav__link">Pricing</a>
+                <a href="#cta" class="nav__link nav__link--cta" id="nav-get-started">Get Started</a>
+            </div>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__badge" id="hero-badge">
+                <span class="hero__badge-dot"></span>
+                Now Available in Ethiopia
+            </div>
+            <h1 class="hero__title" id="hero-title">
+                The Cloud Platform<br>
+                <span class="hero__title--gradient">Built for Africa</span>
+            </h1>
+            <p class="hero__subtitle" id="hero-subtitle">
+                Deploy applications, spin up databases, and launch virtual servers in seconds.
+                Enterprise-grade infrastructure, locally hosted, globally connected.
+            </p>
+            <div class="hero__actions" id="hero-actions">
+                <a href="#cta" class="btn btn--primary" id="hero-start-btn">
+                    Start Building Free
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <a href="#features" class="btn btn--ghost" id="hero-learn-btn">
+                    Learn More
+                </a>
+            </div>
+            <div class="hero__stats" id="hero-stats">
+                <div class="hero__stat">
+                    <span class="hero__stat-value" data-count="99.9">99.9%</span>
+                    <span class="hero__stat-label">Uptime SLA</span>
+                </div>
+                <div class="hero__stat">
+                    <span class="hero__stat-value" data-count="14">14+</span>
+                    <span class="hero__stat-label">Apps Deployed</span>
+                </div>
+                <div class="hero__stat">
+                    <span class="hero__stat-value">&lt;5s</span>
+                    <span class="hero__stat-label">Deploy Time</span>
+                </div>
+            </div>
+        </div>
+        <!-- Floating terminal mockup -->
+        <div class="hero__terminal" id="hero-terminal">
+            <div class="terminal">
+                <div class="terminal__header">
+                    <span class="terminal__dot terminal__dot--red"></span>
+                    <span class="terminal__dot terminal__dot--yellow"></span>
+                    <span class="terminal__dot terminal__dot--green"></span>
+                    <span class="terminal__title">terminal — deploy</span>
+                </div>
+                <div class="terminal__body" id="terminal-body">
+                    <div class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd" id="type-line-1"></span></div>
+                    <div class="terminal__line terminal__line--output" id="type-line-2"></div>
+                    <div class="terminal__line terminal__line--output" id="type-line-3"></div>
+                    <div class="terminal__line terminal__line--success" id="type-line-4"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section__container">
+            <div class="section__header">
+                <span class="section__tag">Why AletCloud</span>
+                <h2 class="section__title">Everything you need to<br><span class="gradient-text">ship faster</span></h2>
+                <p class="section__desc">From code to production in minutes, not days. Our platform handles the infrastructure so you can focus on building.</p>
+            </div>
+            <div class="features__grid" id="features-grid">
+                <div class="feature-card" id="feature-deploy">
+                    <div class="feature-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 6.5v7L12 22 2 15.5v-7z"/><path d="M12 22V15.5"/><path d="m22 8.5-10 7-10-7"/><path d="m2 8.5 10-6.5 10 6.5"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Git Push to Deploy</h3>
+                    <p class="feature-card__desc">Connect your GitHub repo and deploy with a single push. Auto-detected frameworks for Node, Python, Java, PHP, and more.</p>
+                </div>
+                <div class="feature-card" id="feature-scale">
+                    <div class="feature-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="8" height="8" rx="1"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Auto Scaling</h3>
+                    <p class="feature-card__desc">Scale from zero to thousands. Automatic horizontal scaling ensures your app handles traffic spikes effortlessly.</p>
+                </div>
+                <div class="feature-card" id="feature-ssl">
+                    <div class="feature-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Free SSL & Domains</h3>
+                    <p class="feature-card__desc">Every deployment gets automatic HTTPS with free SSL certificates. Bring your own domain or use our *.app.aletcloud.com subdomain.</p>
+                </div>
+                <div class="feature-card" id="feature-local">
+                    <div class="feature-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Local Infrastructure</h3>
+                    <p class="feature-card__desc">Data stays in Ethiopia. Our Addis Ababa data center provides ultra-low latency for local users with data sovereignty compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section__container">
+            <div class="section__header">
+                <span class="section__tag">Services</span>
+                <h2 class="section__title">A complete cloud<br><span class="gradient-text">ecosystem</span></h2>
+            </div>
+            <div class="services__grid" id="services-grid">
+                <div class="service-card service-card--hosting" id="service-hosting">
+                    <div class="service-card__label">App Hosting</div>
+                    <h3 class="service-card__title">Deploy any app<br>in seconds</h3>
+                    <p class="service-card__desc">Support for Node.js, Python, Java Spring Boot, Laravel, Angular, React, and static sites. Auto-build, auto-scale.</p>
+                    <div class="service-card__tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">Static</span>
+                    </div>
+                </div>
+                <div class="service-card service-card--database" id="service-database">
+                    <div class="service-card__label">Managed Databases</div>
+                    <h3 class="service-card__title">Production-ready<br>databases</h3>
+                    <p class="service-card__desc">PostgreSQL, MySQL, and Oracle with automated backups, failover, and monitoring out of the box.</p>
+                    <div class="service-card__tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Oracle</span>
+                    </div>
+                </div>
+                <div class="service-card service-card--vps" id="service-vps">
+                    <div class="service-card__label">Virtual Servers</div>
+                    <h3 class="service-card__title">Full root access<br>VPS</h3>
+                    <p class="service-card__desc">Ubuntu, Debian, CentOS — from 1 vCPU / 1GB to 16 vCPU / 64GB. Public IPs, automatic backups, web console.</p>
+                    <div class="service-card__tags">
+                        <span class="tag">Ubuntu</span>
+                        <span class="tag">Debian</span>
+                        <span class="tag">CentOS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section__container">
+            <div class="section__header">
+                <span class="section__tag">Pricing</span>
+                <h2 class="section__title">Start free,<br><span class="gradient-text">scale as you grow</span></h2>
+                <p class="section__desc">Transparent pricing in ETB. No hidden fees, no surprise bills.</p>
+            </div>
+            <div class="pricing__grid" id="pricing-grid">
+                <div class="pricing-card" id="pricing-solo">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__name">Solo</h3>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__amount">Free</span>
+                        </div>
+                        <p class="pricing-card__desc">Perfect for side projects and learning</p>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li>250m CPU / 256MB RAM</li>
+                        <li>3 apps max</li>
+                        <li>100 build min/month</li>
+                        <li>Free SSL</li>
+                        <li>Community support</li>
+                    </ul>
+                    <a href="#cta" class="btn btn--outline" id="pricing-solo-btn">Get Started</a>
+                </div>
+                <div class="pricing-card pricing-card--featured" id="pricing-pro">
+                    <div class="pricing-card__badge">Most Popular</div>
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__name">Pro</h3>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__amount">360</span>
+                            <span class="pricing-card__currency">ETB/mo</span>
+                        </div>
+                        <p class="pricing-card__desc">For startups and growing teams</p>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li>500m CPU / 512MB RAM</li>
+                        <li>10 apps max</li>
+                        <li>300 build min/month</li>
+                        <li>1GB storage included</li>
+                        <li>Auto-scaling (2 replicas)</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="#cta" class="btn btn--primary" id="pricing-pro-btn">Start with Pro</a>
+                </div>
+                <div class="pricing-card" id="pricing-ultra">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__name">Ultra</h3>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__amount">1,440</span>
+                            <span class="pricing-card__currency">ETB/mo</span>
+                        </div>
+                        <p class="pricing-card__desc">For high-traffic production apps</p>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li>1 CPU / 1GB RAM</li>
+                        <li>25 apps max</li>
+                        <li>1000 build min/month</li>
+                        <li>5GB storage included</li>
+                        <li>Auto-scaling (5 replicas)</li>
+                        <li>Dedicated support</li>
+                    </ul>
+                    <a href="#cta" class="btn btn--outline" id="pricing-ultra-btn">Choose Ultra</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="section__container">
+            <div class="cta__card" id="cta-card">
+                <h2 class="cta__title">Ready to deploy?</h2>
+                <p class="cta__desc">Join Ethiopian developers building on AletCloud. Start with a free tier — no credit card required.</p>
+                <a href="https://aletcloud.com" class="btn btn--primary btn--lg" id="cta-signup-btn">
+                    Create Your Account
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="main-footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#" class="nav__logo">
+                        <span class="nav__logo-icon">☁</span>
+                        <span class="nav__logo-text">AletCloud</span>
+                    </a>
+                    <p class="footer__tagline">Ethiopia's cloud platform for modern developers.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#services">Services</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Resources</h4>
+                        <a href="#">Documentation</a>
+                        <a href="#">API Reference</a>
+                        <a href="#">Status</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 AletCloud. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
